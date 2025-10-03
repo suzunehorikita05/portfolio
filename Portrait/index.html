@@ -41,16 +41,19 @@
       z-index: 2;
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 40px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      background: linear-gradient(90deg, #fff, #aaa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+   h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #fff, #aaa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* fallback Firefox */
+}
+
 
     .gallery {
       display: grid;
