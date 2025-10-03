@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Ahmed Niang</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      margin: 40px 0;
+      background: linear-gradient(90deg, #fff, #aaa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(10px);
+      text-decoration: none;
+      color: white;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    a.retour {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      background: #ffffff;
+      color: #0d0d0d;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    a.retour:hover {
+      color: white;
+      background: #44121600;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ma Galerie</h1>
+
+  <div class="gallery-grid">
+    <a href="../Portrait/index.html" class="card">
+      <img src="../images/Portrait/_MMC0012.JPG" alt="Portrait">
+      <div class="content">
+        <h3>Portraits</h3>
+        <p>Émotions, regards et personnalités capturés en image.</p>
+      </div>
+    </a>
+
+    <a href="../Culinaires/index.html" class="card">
+      <img src="../images/Culinaires/_MMC0024.JPG" alt="Culinaires">
+      <div class="content">
+        <h3>Culinaires</h3>
+        <p>Des saveurs et couleurs immortalisées par la lumière.</p>
+      </div>
+    </a>
+
+  
+
+    <a href="../Mariage/index.html" class="card">
+      <img src="../images/Mariage/IMG_8149.JPG" alt="Mariage">
+      <div class="content">
+        <h3>Mariage</h3>
+        <p>Instants uniques d’amour et de célébration.</p>
+      </div>
+    </a>
+
+    <div style="text-align:center;margin-bottom: 30px;">
+      <a href="../index.html" class="retour">← Retour au portfolio</a>
+    </div>
+  </div>
+</body>
+</html>
